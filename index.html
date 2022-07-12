@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Tech Store</title>
+
     <script type="text/javascript">
 
-        //EVENTOS EN javascript
     
      
     
@@ -22,13 +22,7 @@
     
      
     
-        function hacer_hover()
-    
-        {
-    
-            alert("Estas sobre mi!");
-    
-        }
+      
     
      
     
@@ -51,15 +45,14 @@
 
 <body onload="cargar_pagina()">
 
-    <h1>Tech Store Argentina</h1>
-    
-    <script src="./main.js"></script>
-    
     <form>
+     
+    <input type="button" value="dame click!"  onmouseout="salir_del_hover()"  onclick="hacer_click()"/>
+        
+   </form>
 
-        <input type="button" value="dame click!"  onmouseout="salir_del_hover()" onmouseover="hacer_hover()" onclick="hacer_click()"/>
 
-    </form>
+   <script src="./main.js"></script>
 </body>
 </html>
 
