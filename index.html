@@ -6,9 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Tech Store</title>
+    <script type="text/javascript">
+
+        //EVENTOS EN javascript
+    
+     
+    
+        function hacer_click()
+    
+        {
+    
+            alert("Me haz dado un click");
+    
+        }
+    
+     
+    
+        function hacer_hover()
+    
+        {
+    
+            alert("Estas sobre mi!");
+    
+        }
+    
+     
+    
+        function salir_del_hover()
+     {
+    
+            alert("Adios!");
+    
+        }
+    
+     
+    
+        function cargar_pagina()
+    
+        {alert("Ya se ha cargado el sitio web");}
+    
+        </script>
+
 </head>
-<body>
+
+<body onload="cargar_pagina()">
+
     <h1>Tech Store Argentina</h1>
+    
     <script src="./main.js"></script>
+    
+    <form>
+
+        <input type="button" value="dame click!"  onmouseout="salir_del_hover()" onmouseover="hacer_hover()" onclick="hacer_click()"/>
+
+    </form>
 </body>
 </html>
+
