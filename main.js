@@ -73,3 +73,10 @@ function saludo() {
   
   
   alert(" Muchisimas gracias por comprar en Tech Store");
+
+  function mostarAlerta() {
+    Swal.fire( 'Muchisimas Gracias!!'
+    )
+  }
+
+  document.getElementById("boton_enviar").addEventListener("click",mostarAlerta);
