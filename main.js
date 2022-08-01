@@ -80,3 +80,19 @@ function saludo() {
   }
 
   document.getElementById("boton_enviar").addEventListener("click",mostarAlerta);
+
+  fetch('https://jsonplaceholder.typicode.com/posts',{
+    method: 'POST',
+    body: JSON.stringify({
+      title: 'cliente',
+      body: 'prueba',
+      UserId: 1,
+    }),
+    Headers: {
+      'Content-Type': 'application/json;charset=UTF-8' ,
+
+    },
+   
+  }) 
+  .then((response) => response.json())
+  .then((data) => console.log(data))
